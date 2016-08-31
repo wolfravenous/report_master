@@ -35,6 +35,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  # Rspec for testing applications
+  gem "rspec-rails", "~> 3.2.1"
 end
 
 group :development do
@@ -45,3 +48,7 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  # Capybara is a browser simulator used for integration testing
+  gem "capybara", "~> 2.4"
+end
