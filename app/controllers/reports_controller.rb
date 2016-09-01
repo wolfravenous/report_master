@@ -17,7 +17,8 @@ class ReportsController < ApplicationController
       flash[:notice] = "Report has been created."
       redirect_to @report
     else
-      # nothing, yet
+      flash.now[:alert] = "Report has not been created."
+      render "new"
     end
   end
 

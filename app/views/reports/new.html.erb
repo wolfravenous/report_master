@@ -1,5 +1,16 @@
 <h1>New Report</h1>
 <%= form_for(@report) do |f| %>
+  <% if @report.errors.any? %>
+   <div id="error_explanation">
+     <h2><%= pluralize(@report.errors.count, "error") %>
+     prohibited this project from being saved:</h2>
+      <ul>
+       <% @report.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+       <% end %>
+      </ul>
+    </div>
+  <% end %>
   <p>
     <%= f.label :name, "Student Name" %><br>
     <%= f.text_field :name %>
