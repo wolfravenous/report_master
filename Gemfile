@@ -51,4 +51,5 @@ end
 group :test do
   # Capybara is a browser simulator used for integration testing
   gem "capybara", "~> 2.4"
+  gem "factory_girl_rails", "~> 4.5"
 end
