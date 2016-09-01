@@ -37,7 +37,7 @@ group :development, :test do
   gem 'byebug'
 
   # Rspec for testing applications
-  gem "rspec-rails", "~> 3.2.1"
+  gem "rspec-rails", "~> 3.4.2"
 end
 
 group :development do
