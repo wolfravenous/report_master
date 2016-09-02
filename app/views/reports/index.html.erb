@@ -1,2 +1,10 @@
+<h1>Reports</h1>
 
 <%= link_to "New Report", new_report_path %>
+
+<div id="reports">
+  <% @reports.each do |report| %>
+  <h2><%= link_to report.name, report %></h2>
+  <p><%= report.comment %></p>
+  <% end %>
+</div>
