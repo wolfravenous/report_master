@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.feature "Users can delete reports" do
   scenario "successfully" do
-    FactoryGirl.create(:report, name: "Jimmy Jones")
+    FactoryGirl.create(:report, name: "Jimmy Jones", comment: "Some personal Comments", gender: "female")
 
     visit "/"
     click_link "Jimmy Jones"

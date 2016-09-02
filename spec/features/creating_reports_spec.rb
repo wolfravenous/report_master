@@ -8,7 +8,10 @@ RSpec.feature "Users can create new reports" do
 
   scenario "with valid attributes" do
     fill_in "Name", with: "Jimmy"
+    choose "female"
     fill_in "Comment", with: "Some personal comments about STUDENTNAME"
+
+
     click_button "Create Report"
     expect(page).to have_content "Report has been created."
 
@@ -22,7 +25,6 @@ RSpec.feature "Users can create new reports" do
   scenario "when providing invalid attributes" do
     click_button "Create Report"
     expect(page).to have_content "Report has not been created."
-    expect(page).to have_content "Name can't be blank"
   end
 
 end
