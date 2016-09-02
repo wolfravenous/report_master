@@ -11,6 +11,10 @@ class ReportsController < ApplicationController
     @report = Report.new
   end
 
+  def edit
+    @report = Report.find(params[:id])
+  end
+
   def create
     @report = Report.new(report_params)
 
@@ -20,6 +24,18 @@ class ReportsController < ApplicationController
     else
       flash.now[:alert] = "Report has not been created."
       render "new"
+    end
+  end
+
+  def update
+    @report = Report.find(params[:id])
+    
+    if @report.update(report_params)
+      flash[:notice] = "Report has been updated."
+      redirect_to @report
+    else
+      flash.now[:alert] = "Report has not been updated."
+      render "edit"
     end
   end
 

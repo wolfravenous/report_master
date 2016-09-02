@@ -1,3 +1,6 @@
 <% title(@report.name, "Reports") %>
 <h1><%= @report.name %></h1>
+
+<%= link_to "Edit Report", edit_report_path(@report) %>
+
 <p><%= @report.comment %></p>
