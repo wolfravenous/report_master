@@ -29,7 +29,7 @@ class ReportsController < ApplicationController
 
   def update
     @report = Report.find(params[:id])
-    
+
     if @report.update(report_params)
       flash[:notice] = "Report has been updated."
       redirect_to @report
@@ -37,6 +37,14 @@ class ReportsController < ApplicationController
       flash.now[:alert] = "Report has not been updated."
       render "edit"
     end
+  end
+
+  def destroy
+    @report = Report.find(params[:id])
+    @report.destroy
+
+    flash[:notice] = "Report has been deleted."
+    redirect_to reports_path
   end
 
   private

@@ -7,15 +7,15 @@ RSpec.feature "Users can create new reports" do
   end
 
   scenario "with valid attributes" do
-    fill_in "Name", with: "Student"
+    fill_in "Name", with: "Jimmy"
     fill_in "Comment", with: "Some personal comments about STUDENTNAME"
     click_button "Create Report"
     expect(page).to have_content "Report has been created."
 
-    report = Report.find_by(name: "Student")
+    report = Report.find_by(name: "Jimmy")
     expect(page.current_url).to eq report_url(report)
 
-    title = "Student - Reports - ReportMaster"
+    title = "Jimmy - Reports - ReportMaster"
     expect(page).to have_title title
   end
 
