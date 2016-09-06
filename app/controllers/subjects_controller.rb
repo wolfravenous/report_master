@@ -18,7 +18,8 @@ class SubjectsController < ApplicationController
       flash[:notice] = "Subject has been created."
       redirect_to @subject
     else
-      # nothing, yet
+      flash.now[:alert] = "Subject has not been created."
+      render "new"
     end
   end
 
