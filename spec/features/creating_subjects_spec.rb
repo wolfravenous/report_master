@@ -10,5 +10,8 @@ RSpec.feature "Users can create new subjects" do
     click_button "Create Subject"
 
     expect(page).to have_content "Subject has been created."
+
+    subject = Subject.find_by(name: "RoR 101")
+    expect(page.current_url).to eq subject_url(subject)
   end
 end
