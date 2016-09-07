@@ -40,6 +40,14 @@ class SubjectsController < ApplicationController
     end
   end
 
+  def destroy
+    @subject = Subject.find(params[:id])
+    @subject.destroy
+
+    flash[:notice] = "Subject has been deleted."
+    redirect_to subjects_path
+  end
+
   private
 
   def subject_params
