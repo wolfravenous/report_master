@@ -8,6 +8,10 @@ class SubjectsController < ApplicationController
     @subject = Subject.find(params[:id])
   end
 
+  def edit
+    @subject = Subject.find(params[:id])
+  end
+
   def new
     @subject = Subject.new
   end
@@ -21,6 +25,18 @@ class SubjectsController < ApplicationController
     else
       flash.now[:alert] = "Subject has not been created."
       render "new"
+    end
+  end
+
+  def update
+    @subject = Subject.find(params[:id])
+
+    if @subject.update(subject_params)
+      flash[:notice] = "Subject has been updated."
+      redirect_to @subject
+    else
+      flash.now[:alert] = "Subject has not been updated."
+      render "edit"
     end
   end
 
