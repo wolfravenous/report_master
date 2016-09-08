@@ -2,6 +2,12 @@ require "rails_helper"
 
 RSpec.feature "Users can create new reports" do
   before do
+
+    visit "/subjects"
+    click_link "New Subject"
+    fill_in "Name", with: "Astronomy"
+    click_button "Create Subject"
+    
     visit "/"
     click_link "New Report"
   end
@@ -9,6 +15,7 @@ RSpec.feature "Users can create new reports" do
   scenario "with valid attributes" do
     fill_in "Name", with: "Jimmy"
     choose "female"
+    select "Astronomy", :from => "Subject"
     fill_in "Comment", with: "Some personal comments about STUDENTNAME"
 
 
