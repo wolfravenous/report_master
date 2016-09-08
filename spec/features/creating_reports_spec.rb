@@ -2,12 +2,12 @@ require "rails_helper"
 
 RSpec.feature "Users can create new reports" do
   before do
+    FactoryGirl.create(:subject, name: "Astronomy")
+    # visit "/subjects"
+    # click_link "New Subject"
+    # fill_in "Name", with: "Astronomy"
+    # click_button "Create Subject"
 
-    visit "/subjects"
-    click_link "New Subject"
-    fill_in "Name", with: "Astronomy"
-    click_button "Create Subject"
-    
     visit "/"
     click_link "New Report"
   end
