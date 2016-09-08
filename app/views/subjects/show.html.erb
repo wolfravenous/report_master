@@ -1,9 +1,14 @@
-<h1><%= @subject.name %></h1>
+<% title(@subject.name, "Subjects") %>
 
- <%= link_to "Edit Subject", edit_subject_path(@subject) %>
+<header>
+  <h1><%= @subject.name %></h1>
 
-<%= link_to "Delete Subject",
-    subject_path(@subject),
-    method: :delete,
-    data: { confirm: "Are you sure you want to delete this subject?" }
- %>
+  <ul class="actions">
+    <li><%= link_to fa_icon("pencil") + " Edit Subject", edit_subject_path(@subject), class: "btn btn-primary" %></li>
+    <li><%= link_to fa_icon("trash") + " Delete Subject",
+      subject_path(@subject),
+      method: :delete,
+      data: { confirm: "Are you sure you want to delete this subject?" },
+      class: "btn btn-danger" %></li>
+  </ul>
+</header>

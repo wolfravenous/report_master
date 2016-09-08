@@ -14,6 +14,9 @@ RSpec.feature "Users can create new subjects" do
 
     subject = Subject.find_by(name: "RoR 101")
     expect(page.current_url).to eq subject_url(subject)
+
+    title = "RoR 101 - Subjects - ReportMaster"
+    expect(page).to have_title title
   end
 
   scenario "when providing invalid attributes" do

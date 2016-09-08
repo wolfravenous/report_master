@@ -1,6 +1,13 @@
-<h1>Subjects</h1>
+<header>
+  <h1>Subjects</h1>
 
-<%= link_to "New Subject", new_subject_path %>
+  <ul class="actions">
+    <li><%= link_to "New Subject", new_subject_path, class: "new" %></li>
+  </ul>
+
+</header>
+
+
 
 <div id="subjects">
   <% @subjects.each do |subject| %>
