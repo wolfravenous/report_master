@@ -36,6 +36,13 @@ class UnitsController < ApplicationController
     end
   end
 
+  def destroy
+    @unit.destroy
+    flash[:notice] = "Unit has been deleted."
+
+    redirect_to @subject
+  end
+
 private
 
   def unit_params
