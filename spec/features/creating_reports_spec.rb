@@ -16,6 +16,7 @@ RSpec.feature "Users can create new reports" do
     fill_in "Name", with: "Jimmy"
     choose "female"
     select "Astronomy", :from => "Subject"
+    fill_in "Classwork", with: "88"
     fill_in "Comment", with: "Some personal comments about STUDENTNAME"
 
 

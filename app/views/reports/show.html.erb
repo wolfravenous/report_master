@@ -12,6 +12,7 @@
   </ul>
 </header>
 
-<p><%= @report.gender %></p>
-<p><%= @report.subject.name %></p>
-<p><%= @report.comment %></p>
+<p><b><%= :gender.capitalize %>:</b>  <%= @report.gender %></p>
+<p><b><%= :subject.capitalize %>:</b>   <%= @report.subject.name %></p>
+<p><b><%= :classwork.capitalize %>:</b>   <%= @report.classwork %></p>
+<p><b><%= :comment.capitalize %>:</b>   <%= @report.comment %></p>

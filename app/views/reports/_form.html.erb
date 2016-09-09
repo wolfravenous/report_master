@@ -3,6 +3,7 @@
   <%= f.input :name %>
   <%= f.input :gender, as: :radio_buttons, collection: ['female', 'male'] %>
   <%= f.association :subject %>
+  <%= f.input :classwork %>
   <%= f.input :comment %>
 
   <%= f.button :submit, class: "btn-primary" %>
