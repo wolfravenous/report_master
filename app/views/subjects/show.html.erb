@@ -20,3 +20,12 @@
       class: "new" %></li>
   </ul>
 </header>
+
+<ul id="units">
+  <% @subject.units.each do |unit| %>
+    <li>
+      #<%= unit.id %> -
+      <%= link_to unit.title, [@subject, unit] %>
+    </li>
+  <% end %>
+</ul>
