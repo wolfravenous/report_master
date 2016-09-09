@@ -53,6 +53,38 @@
 	<array>
 		<dict>
 			<key>Class</key>
+			<string>LineGraphic</string>
+			<key>ID</key>
+			<integer>43179</integer>
+			<key>Points</key>
+			<array>
+				<string>{52, 353}</string>
+				<string>{288, 351}</string>
+			</array>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>b</key>
+						<string>1</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>HeadArrow</key>
+					<string>0</string>
+					<key>Legacy</key>
+					<true/>
+					<key>TailArrow</key>
+					<string>0</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Class</key>
 			<string>Group</string>
 			<key>Graphics</key>
 			<array>
@@ -2847,7 +2879,7 @@ Initial Unit Selector}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-Class Selector}</string>
+Subject Selector}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -3935,7 +3967,7 @@ Class Selector}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2016-08-31 02:26:00 +0000</string>
+	<string>2016-09-09 15:24:57 +0000</string>
 	<key>Modifier</key>
 	<string>Admin</string>
 	<key>NotesVisible</key>
@@ -4030,7 +4062,7 @@ Class Selector}</string>
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {576, 631}}</string>
+		<string>{{0, 14}, {576, 631}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
