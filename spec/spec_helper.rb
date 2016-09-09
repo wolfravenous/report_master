@@ -17,6 +17,16 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+
+  config.full_backtrace = false
+
+  config.backtrace_exclusion_patterns = [
+    /\/lib\d*\/ruby\//,
+    /org\/jruby\//,
+    /bin\//,
+    /lib\/rspec\/(core|expectations|matchers|mocks)/,
+    /gems\//
+  ]
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
@@ -39,6 +49,7 @@ RSpec.configure do |config|
     # `true` in RSpec 4.
     mocks.verify_partial_doubles = true
   end
+
 
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
@@ -72,6 +83,7 @@ RSpec.configure do |config|
   # particularly slow.
   config.profile_examples = 10
 
+
   # Run specs in random order to surface order dependencies. If you find an
   # order dependency and want to debug it, you can fix the order by providing
   # the seed, which is printed after each run.
@@ -84,4 +96,8 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+
+
+
 end

@@ -4,6 +4,13 @@
   </header>
   <header>
     <h2><%= @unit.title %></h2>
-</header>
+
+    <ul class="actions">
+      <li><%= link_to "Edit Unit", [:edit, @subject, @unit],
+        class: "edit" %></li>
+    </ul>
+
+  </header>
+
   <%= simple_format(@unit.content) %>
 </div>
