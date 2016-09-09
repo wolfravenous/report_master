@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Users can view reports" do
   scenario "with the report details" do
     FactoryGirl.create(:subject, name: "Astronomy")
-    report = FactoryGirl.create(:report, name: "Jill", comment: "Some personal Comments", gender: "female", classwork: "88", assessment: "92", participate: "90", subject_id: 1)
+    report = FactoryGirl.create(:report, name: "Jill", comment: "Some personal Comments", gender: "female", classwork: "90", assessment: "80", participate: "70", subject_id: 1)
 
     visit "/"
     click_link "Jill"
@@ -11,9 +11,10 @@ RSpec.feature "Users can view reports" do
     expect(page).to have_content "Jill"
     expect(page).to have_content "female"
     expect(page).to have_content "Astronomy"
-    expect(page).to have_content "88"
-    expect(page).to have_content "92"
     expect(page).to have_content "90"
+    expect(page).to have_content "80"
+    expect(page).to have_content "70"
+    expect(page).to have_content "83.0"
     expect(page).to have_content "Some personal Comments"
 
 

@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Users can edit existing reports" do
   before do
     FactoryGirl.create(:subject, name: "Astronomy")
-    FactoryGirl.create(:report, name: "Jimmy", comment: "Some personal Comments", gender: "female", subject_id: 1)
+    FactoryGirl.create(:report, name: "Jimmy", comment: "Some personal Comments", gender: "female", classwork: "88", assessment: "92", participate: "90", subject_id: 1)
 
     visit "/"
     click_link "Jimmy"
