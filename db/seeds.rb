@@ -10,8 +10,14 @@ bio.units.create(:title => "01-The Science of Life", :content => "This would be 
 bio.units.create(:title => "02-The Chemistry of Life", :content => "This would be valid content.")
 bio.units.create(:title => "03-The Biosphere", :content => "This would be valid content.")
 
+chem = Subject.create(:name => "Chemistry")
+chem.units.create(:title => "01-Introduction to Chemistry", :content => "This would be valid content.")
+chem.units.create(:title => "02-Matter and Change", :content => "This would be valid content.")
+chem.units.create(:title => "03-Scientific Measurement", :content => "This would be valid content.")
 
+Report.create(:name => "Jimmy Jones", :comment => "Some personal Comments", :gender => "male", :classwork => "35", :assessment => "36", :participate => "37", :subject_id => 1)
 
+Report.create(:name => "Susie Stone", :comment => "Some personal Comments", :gender => "female", :classwork => "53", :assessment => "54", :participate => "55", :subject_id => 2)
 #
 # Subject.create(name: "Biology")
 # Subject.create(name: "Chemistry")
