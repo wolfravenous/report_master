@@ -3,6 +3,7 @@
   <%= f.input :name %>
   <%= f.input :gender, as: :radio_buttons, collection: ['female', 'male'] %>
   <%= f.association :subject %>
+  <%= f.input :unit_id, collection: Subject.all, as: :grouped_select, group_method: :units, prompt: "Select One" %>
   <%= f.input :classwork %>
   <%= f.input :assessment %>
   <%= f.input :participate %>
