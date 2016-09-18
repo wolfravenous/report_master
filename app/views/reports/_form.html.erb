@@ -2,8 +2,21 @@
 
   <%= f.input :name %>
   <%= f.input :gender, as: :radio_buttons, collection: ['female', 'male'] %>
-  <%= f.association :subject %>
-  <%= f.input :unit_id, collection: Subject.all, as: :grouped_select, group_method: :units, prompt: "Select One" %>
+
+
+
+    <%= f.association :subject %>
+
+    <%= f.input :unit_id, collection: Subject.all, as: :grouped_select, group_method: :units %>
+
+    <!-- <div>
+       <%= f.collection_select :subject_id, Subject.order(:name), :id, :name, :prompt => "-- Select Subject --" %>
+    </div>
+    <div>
+       <%= f.grouped_collection_select :unit_id, Subject.order(:name), :units, :name, :id, :title, :prompt => "-- Select Unit --"  %>
+    </div> -->
+
+
   <%= f.input :classwork %>
   <%= f.input :assessment %>
   <%= f.input :participate %>

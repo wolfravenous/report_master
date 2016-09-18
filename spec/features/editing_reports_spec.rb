@@ -2,8 +2,17 @@ require "rails_helper"
 
 RSpec.feature "Users can edit existing reports" do
   before do
-    FactoryGirl.create(:subject, name: "Astronomy")
-    FactoryGirl.create(:report, name: "Jimmy", comment: "Some personal Comments", gender: "female", classwork: "88", assessment: "92", participate: "90", subject_id: 1)
+    FactoryGirl.create(:subject, name: "Biology")
+    FactoryGirl.create(:unit, title: "Unit1", content: "This is the content for unit 1", subject_id: 1)
+
+    # visit "/subjects/1"
+    # click_link "New Unit"
+    # fill_in "Title", with: "Unit1"
+    # fill_in "Content", with: "This is the content for unit 1"
+    # click_button "Create Unit"
+
+
+    FactoryGirl.create(:report, name: "Jimmy", comment: "Some personal Comments", gender: "female", classwork: "88", assessment: "92", participate: "90", subject_id: 1, unit_id: 1)
 
     visit "/"
     click_link "Jimmy"
