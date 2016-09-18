@@ -16,8 +16,12 @@ class Report < ActiveRecord::Base
 
 
   # Callbacks
-  def average
+  def favg
     (self.classwork.to_f * 0.5) + (self.assessment.to_f * 0.3) + (self.participate.to_f * 0.2) + (0.5)
+  end
+
+  def average
+    favg.to_i
   end
 
 end
