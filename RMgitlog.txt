@@ -1,0 +1,269 @@
+commit 08bd14b494daa08bcb725bec1b9c1cd1b2084f3d
+Author: wolfravenous <wolfravenous@users.noreply.github.com>
+Date:   Tue Aug 30 16:48:27 2016 -0400
+
+    Initial commit
+
+commit d372d18d88b506eec5b0205bde78e2722d7b4c3c
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Tue Aug 30 16:52:00 2016 -0400
+
+    initial commit
+
+commit 38ee3ec8448e5f600b70458e2cce7b21044e9b56
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Tue Aug 30 20:20:29 2016 -0400
+
+    PT #129505173 added rspec and cabybara gems and removed test directory
+
+commit d62e9fd63d7955f907ae6ccab669cd5e0d118346
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Wed Aug 31 20:19:30 2016 -0400
+
+    'Create a new report' feature complete.
+
+commit 80eb12d80af7a9293a0148705cb51c3d85b357a0
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Wed Aug 31 20:42:34 2016 -0400
+
+    Add title functionality for report show view
+
+commit 1e169f29f634aabef3a47fc92cd9730c4c58c18b
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Thu Sep 1 08:19:37 2016 -0400
+
+    Add validation to ensure names are specified when creating reports
+
+commit 8d23569f3d2f74b53ceaff6d67594a29b68f92f5
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Thu Sep 1 17:49:07 2016 -0400
+
+    Added Factory Girl gem
+
+commit a0ab396aef75fd3d8503f7edbb2c1ed6bd8507bf
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Thu Sep 1 21:35:05 2016 -0400
+
+    Add the ability to view a list of all the reports
+
+commit 3d7b1da05d6f6a7a8f24c45babeca4a7b389824b
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 2 08:20:36 2016 -0400
+
+    Add funcitionality to update projects.
+
+commit f3607eead377a9c3dcf3ef4670982547edcbfbe1
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 2 11:14:10 2016 -0400
+
+    Projects can now be deleted
+
+commit d78b0ced973ddb9e188fe444101a3d0b09458dd5
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 2 11:37:58 2016 -0400
+
+    Redirect the users back to the reports page if they try going to a project that does not exist
+
+commit ffd3ba38af46bc319fa9372ad202e038c1d9fb0d
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 2 17:26:23 2016 -0400
+
+    Add functionality to choose male or female using radio buttons.
+
+commit 54d61840376470fdc685db2dfe2eab9f6ed27090
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Tue Sep 6 09:19:08 2016 -0400
+
+    Create the new Subject Feature complete.
+
+commit 08af0c3adb6f9e3d2bbe6fd387a0639af53c45d3
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Tue Sep 6 09:31:02 2016 -0400
+
+    add to create subject test to ensure you are on the show action.
+
+commit 91738bb448547175610efdef7564d4db19fd9e9c
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Tue Sep 6 16:05:37 2016 -0400
+
+    add validation to ensure names are specified when creating subjects.
+
+commit f16e3c51ac465448ee973bedfcc47efc6cbb5566
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Tue Sep 6 20:15:04 2016 -0400
+
+    add ability to view in an index action
+
+commit d29506e075cdad66b71ffb6da02a0eddcdb5f740
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Wed Sep 7 11:54:35 2016 -0400
+
+    The U of CRUD completed for subjects.
+
+commit 0dc6b9d013f0f1fdda199ea839c3e9fc5d832a1d
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Wed Sep 7 12:16:12 2016 -0400
+
+    Completed the D of CRUD for subjects.
+
+commit 5e2f168f6e95747d54a0a8c88060a46227bcc189
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Wed Sep 7 13:21:00 2016 -0400
+
+    Redirect the users back to the subjects page if they try going to a subject that does not exist
+
+commit 93d796fcbb05bf07208f9e6dc6b23c39f01298e1
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Thu Sep 8 08:24:45 2016 -0400
+
+    Created a has_many-belongs_to association between subjects and reports.  Created dropdown selector on new-edit report form. Added FactoryGirl entries into report specs to create a subject entry for testing purposes.
+
+commit 3f4c6a27f6c15565cd8f7fd96cc2e5fdac485658
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Thu Sep 8 10:42:56 2016 -0400
+
+    replaced a series of commands to create the subject object astronomy with a FactoryGirl creation of the object.
+
+commit 5226bbfc857592e41ffe63592002b939db83fbe3
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Thu Sep 8 18:18:34 2016 -0400
+
+    added Bootstrap, Awesome Font, and Simple Form for styling.  Refactored the forms, modified application.html.erb and added css to make the app pretty.
+
+commit a26d2e0c93cccf5f20bb0d0c46372303a7b007f0
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 9 07:16:07 2016 -0400
+
+    added the classwork parameter to reports. Put some labels on the  data entries in the reports show view.
+
+commit 1c2c9a039d13a30a23af81a16a99b6edebe198e6
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 9 08:11:29 2016 -0400
+
+    add the assessment and participate grade values to reports.
+
+commit f580326ed930157b456a849b6d45c46eaa6fd43d
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 9 11:19:58 2016 -0400
+
+    add average to reports, put calculation in model, pass value into view show and check with rspec view test that the value is calculated and displayed in view.
+
+commit 551f1c2a82efe1b7b98a05a6793c4ef4525177fc
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 9 11:26:32 2016 -0400
+
+    changed the mockup file to remove the grade description selector, all classes will have the same tyep of grade description for simplicity.
+
+commit f84bb6c7de58fd494bf81738a98d0787f0b4c073
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 9 16:09:29 2016 -0400
+
+    add the ability to create units that are nested within subjects.
+
+commit 07a85a73698b5a676dce224b4fc61134fe08d9b0
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 9 16:54:39 2016 -0400
+
+    Implement the display of units on the subject pages.
+
+commit 34a093c5aef9be4f55bfaa7895cbb875ca6c99d2
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 9 19:33:15 2016 -0400
+
+    add funtionality to edit units.
+
+commit 6275b12fe64cd1436988a94de61f8666d6e9907a
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 9 19:56:33 2016 -0400
+
+    Implement deleting unit feature
+
+commit 916ea82427c008de9f35b95fc14f9a365e0eea51
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 12 08:22:32 2016 -0400
+
+    added feature to unit view to link back to subject via heading.
+
+commit 6c00a4f473a73797c9bb4c38509de74fb2eeeaa5
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 12 11:23:11 2016 -0400
+
+    added to view test for units to verify that link back to subject is working.
+
+commit 207c1da8c58c732659f5048d4da7690d4f67929c
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 12 11:48:06 2016 -0400
+
+    Notes on mock up
+
+commit d4c7c28134c4e536ba95e5060465d4381d488699
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 12 15:30:48 2016 -0400
+
+    Successfully setup seed data for Subjects and Units.
+
+commit 612f3f5ea4e3198507c3c98a0141b064d76b6c58
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 12 15:52:12 2016 -0400
+
+    added report seed data, also fixed subject header link on unit view to link back to subject.
+
+commit fa42540b4e458112e0e13fe633c1c14a7d9255a9
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Fri Sep 16 14:55:03 2016 -0400
+
+    Have the unit functionality showing up on the create and edit report page.
+
+commit 6a0049c7f53a17dc16e313d13666d5ccadf371c3
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Sun Sep 18 12:22:36 2016 -0400
+
+    added functionality for dynamic drop down boxes using jQuery and Simple Form, and setting up tests to pass with Rspec and Capybara.
+
+commit cd3886c71516db3d46dcb1fb4d2d74bb61c6ba4b
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Sun Sep 18 12:58:56 2016 -0400
+
+    altered the model definition of average to add half a point, then convert the value to an integer in the view.
+
+commit 35c6d9ceeee121de423ad8d60142aba2c5701a7f
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Sun Sep 18 13:00:30 2016 -0400
+
+    moved the conversion to an integer for the avergage out of the view and put it in the model.
+
+commit 323e7eae9d4a04d9d1f456e2d990fd256144ede0
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 19 08:06:58 2016 -0400
+
+    changed label in report _form partial from Comment to Personal Comments.
+
+commit d96d925d83a67e6141de8467df2080b0046967be
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 19 08:22:51 2016 -0400
+
+    changed intro from radio buttons to a selector in mockup.
+
+commit 3c182c3d1043ed1743a9cfdb1051e74068e3f814
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 19 10:48:31 2016 -0400
+
+    created a git diff output file for creating units to compare for when creating intros which will be nested just like the units under subject.
+
+commit a53bd99de6ae3e79b843a9ba7bbf2cb388ebac1d
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 19 14:59:59 2016 -0400
+
+    Implement creating Intro for a subject
+
+commit 7e072956c4a150878de04f45927e876839a28daf
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 19 18:47:55 2016 -0400
+
+    implement functionality to view and edit intros.
+
+commit 7ec8ea60e59ecac2afed5f6211fe5d0de1506d1f
+Author: Steve Hampton <wolfravenous@gmail.com>
+Date:   Mon Sep 19 18:57:03 2016 -0400
+
+    Implement deleting intros feature
