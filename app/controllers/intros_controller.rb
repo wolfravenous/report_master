@@ -35,6 +35,13 @@ class IntrosController < ApplicationController
     end
   end
 
+  def destroy
+    @intro.destroy
+    flash[:notice] = "Intro has been deleted."
+
+    redirect_to @subject
+  end
+
   private
 
   def intro_params
