@@ -21,7 +21,14 @@
   </ul>
 </header>
 
-<p>Intros will go here later</p>
+<ul id="intros">
+  <% @subject.intros.each do |intro| %>
+    <li>
+      #<%= intro.id %> -
+      <%= link_to intro.title, [@subject, intro] %>
+    </li>
+  <% end %>
+</ul>
 
 <header>
   <h2>Units</h2>

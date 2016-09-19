@@ -10,6 +10,10 @@ class IntrosController < ApplicationController
     # via before_action :set_intro
   end
 
+  def edit
+    # via before_action :set_intro
+  end
+
   def create
     @intro = @subject.intros.build(intro_params)
     if @intro.save
@@ -21,6 +25,15 @@ class IntrosController < ApplicationController
     end
   end
 
+  def update
+    if @intro.update(intro_params)
+      flash[:notice] = "Intro has been updated."
+      redirect_to [@subject, @intro]
+    else
+      flash.now[:alert] = "Intro has not been updated."
+      render "edit"
+    end
+  end
 
   private
 
