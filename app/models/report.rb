@@ -3,6 +3,7 @@ class Report < ActiveRecord::Base
   # Associations
   belongs_to :subject
   belongs_to :unit
+  belongs_to :intro
 
   # Validations
   validates :name, presence: true

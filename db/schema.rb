@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160919172859) do
+ActiveRecord::Schema.define(version: 20160919233028) do
 
   create_table "intros", force: :cascade do |t|
     t.string   "title"
@@ -34,8 +34,10 @@ ActiveRecord::Schema.define(version: 20160919172859) do
     t.decimal  "assessment"
     t.decimal  "participate"
     t.integer  "unit_id"
+    t.integer  "intro_id"
   end
 
+  add_index "reports", ["intro_id"], name: "index_reports_on_intro_id"
   add_index "reports", ["subject_id"], name: "index_reports_on_subject_id"
   add_index "reports", ["unit_id"], name: "index_reports_on_unit_id"
 
