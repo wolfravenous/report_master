@@ -218,7 +218,10 @@ commit 6a0049c7f53a17dc16e313d13666d5ccadf371c3
 Author: Steve Hampton <wolfravenous@gmail.com>
 Date:   Sun Sep 18 12:22:36 2016 -0400
 
+
     added functionality for dynamic drop down boxes using jQuery and Simple Form, and setting up tests to pass with Rspec and Capybara.
+
+MARKER
 
 commit cd3886c71516db3d46dcb1fb4d2d74bb61c6ba4b
 Author: Steve Hampton <wolfravenous@gmail.com>

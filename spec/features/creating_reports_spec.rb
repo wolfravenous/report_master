@@ -4,6 +4,7 @@ RSpec.feature "Users can create new reports" do
   before do
     FactoryGirl.create(:subject, name: "Biology")
     FactoryGirl.create(:unit, title: "Unit1", content: "This is the content for unit 1", subject_id: 1)
+    FactoryGirl.create(:intro, title: "Regular", content: "This is the content for a regular intro", subject_id: 1)
     # visit "/subjects"
     # click_link "New Subject"
     # fill_in "Name", with: "Astronomy"
@@ -24,6 +25,7 @@ RSpec.feature "Users can create new reports" do
     choose "female"
     select "Biology", :from => "Subject"
     select "Unit1", :from => "Unit"
+    select "Regular", :from => "Intro"
     fill_in "Classwork", with: "88"
     fill_in "Assessment", with: "92"
     fill_in "Participate", with: "90"

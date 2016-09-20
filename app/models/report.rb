@@ -10,6 +10,7 @@ class Report < ActiveRecord::Base
   validates :comment, presence: true
   validates :gender, presence: true
   validates :subject_id, presence: true
+  validates :intro_id, presence: true
   validates :unit_id, presence: true
   validates :classwork, presence: true
   validates :assessment, presence: true
