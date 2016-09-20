@@ -26,7 +26,7 @@ jQuery ->
     else
       $('#report_unit_id').empty()
 
-jQuery ->
+
   intros = $('#report_intro_id').html()
   $('#report_subject_id').change ->
     subject = $('#report_subject_id :selected').text()

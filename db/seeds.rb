@@ -11,8 +11,8 @@ bio.units.create(:title => "01-The Science of Life", :content => "This would be 
 bio.units.create(:title => "02-The Chemistry of Life", :content => "This would be valid content.")
 bio.units.create(:title => "03-The Biosphere", :content => "This would be valid content.")
 
-bio.intros.create(:title => "Welcome", :content => "This would be content for a welcome introduction.")
-bio.intros.create(:title => "Regular", :content => "This would be content for a regular introduction.")
+bio.intros.create(:title => "Bio-Welcome", :content => "This would be content for a welcome introduction.")
+bio.intros.create(:title => "Bio-Regular", :content => "This would be content for a regular introduction.")
 
 
 chem = Subject.create(:name => "Chemistry")
@@ -21,14 +21,14 @@ chem.units.create(:title => "01-Introduction to Chemistry", :content => "This wo
 chem.units.create(:title => "02-Matter and Change", :content => "This would be valid content.")
 chem.units.create(:title => "03-Scientific Measurement", :content => "This would be valid content.")
 
-chem.intros.create(:title => "Regular", :content => "This would be content for a regular introduction.")
-chem.intros.create(:title => "Concluding", :content => "This would be content for a concluding introduction.")
+chem.intros.create(:title => "Chm-Regular", :content => "This would be content for a regular introduction.")
+chem.intros.create(:title => "Chm-Concluding", :content => "This would be content for a concluding introduction.")
 
 
-Report.create(:name => "Jimmy Jones", :comment => "Some personal Comments", :gender => "male", :classwork => "35", :assessment => "36", :participate => "37", :subject_id => 1, :unit_id => 1)
+Report.create(:name => "Jimmy Jones", :comment => "Some personal Comments", :gender => "male", :classwork => "35", :assessment => "36", :participate => "37", :subject_id => 1, :unit_id => 1, :intro_id => 1)
 
 
-Report.create(:name => "Susie Stone", :comment => "Some personal Comments", :gender => "female", :classwork => "53", :assessment => "54", :participate => "55", :subject_id => 2, :unit_id => 2)
+Report.create(:name => "Susie Stone", :comment => "Some personal Comments", :gender => "female", :classwork => "53", :assessment => "54", :participate => "55", :subject_id => 2, :unit_id => 2, :intro_id => 4)
 #
 # Subject.create(name: "Biology")
 # Subject.create(name: "Chemistry")
