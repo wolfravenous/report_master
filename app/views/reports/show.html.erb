@@ -4,7 +4,7 @@
   <h1><%= @report.name %></h1>
 
   <ul class="actions">
-    <li><%= link_to "Edit Report", edit_report_path(@report), class: "edit" %></li>
+    <li><%= link_to "Edit Report", edit_report_path(@report), class: "edit", method: :get %></li>
     <li><%= link_to "Delete Report", report_path(@report),
       method: :delete,
       data: { confirm: "Are you sure you want to delete this report?" },
