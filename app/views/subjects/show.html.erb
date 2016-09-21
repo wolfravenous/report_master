@@ -57,4 +57,12 @@
 </header>
 
 
-<!-- List out future units here later -->
+
+<ul id="futures">
+  <% @subject.futures.each do |future| %>
+    <li>
+      #<%= future.id %> -
+      <%= link_to future.title, [@subject, future] %>
+    </li>
+  <% end %>
+</ul>
