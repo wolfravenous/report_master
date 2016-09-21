@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   resources :reports
 
   resources :subjects do
-    resources :intros, :units
+    resources :intros, :units, :futures
   end
   # Example resource route with options:
   #   resources :products do

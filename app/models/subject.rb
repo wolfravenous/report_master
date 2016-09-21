@@ -6,6 +6,7 @@ class Subject < ActiveRecord::Base
 
   has_many :units, dependent: :delete_all
   has_many :intros, dependent: :delete_all
+  has_many :futures, dependent: :delete_all
   
   # Validations
   validates :name, presence: true
