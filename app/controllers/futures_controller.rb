@@ -23,8 +23,15 @@ def create
   end
 end
 
+def destroy
+  @future.destroy
+  flash[:notice] = "Future has been deleted."
+
+  redirect_to @subject
+end
 
 private
+
   def set_subject
     @subject = Subject.find(params[:subject_id])
   end

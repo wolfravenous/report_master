@@ -10,13 +10,13 @@ bio = Subject.create(:name => "Biology")
 bio.intros.create(:title => "Bio-Welcome", :content => "This would be content for a welcome introduction.")
 bio.intros.create(:title => "Bio-Regular", :content => "This would be content for a regular introduction.")
 
-bio.units.create(:title => "01-The Science of Life", :content => "This would be valid content.")
-bio.units.create(:title => "02-The Chemistry of Life", :content => "This would be valid content.")
-bio.units.create(:title => "03-The Biosphere", :content => "This would be valid content.")
+bio.units.create(:title => "The Science of Life", :content => "This would be valid content.")
+bio.units.create(:title => "The Chemistry of Life", :content => "This would be valid content.")
+bio.units.create(:title => "The Biosphere", :content => "This would be valid content.")
 
-bio.futures.create(:title => "01-The Science of Life", :content => "This would be valid content for what student will do.")
-bio.futures.create(:title => "02-The Chemistry of Life", :content => "This would be valid content for what student will do.")
-bio.futures.create(:title => "03-The Biosphere", :content => "This would be valid content for what student will do.")
+bio.futures.create(:title => "The Science of Life", :content => "This would be valid content for what student will do.")
+bio.futures.create(:title => "The Chemistry of Life", :content => "This would be valid content for what student will do.")
+bio.futures.create(:title => "The Biosphere", :content => "This would be valid content for what student will do.")
 
 
 chem = Subject.create(:name => "Chemistry")
@@ -24,13 +24,13 @@ chem = Subject.create(:name => "Chemistry")
 chem.intros.create(:title => "Chm-Regular", :content => "This would be content for a regular introduction.")
 chem.intros.create(:title => "Chm-Concluding", :content => "This would be content for a concluding introduction.")
 
-chem.units.create(:title => "01-Introduction to Chemistry", :content => "This would be valid content.")
-chem.units.create(:title => "02-Matter and Change", :content => "This would be valid content.")
-chem.units.create(:title => "03-Scientific Measurement", :content => "This would be valid content.")
+chem.units.create(:title => "Introduction to Chemistry", :content => "This would be valid content.")
+chem.units.create(:title => "Matter and Change", :content => "This would be valid content.")
+chem.units.create(:title => "Scientific Measurement", :content => "This would be valid content.")
 
-chem.futures.create(:title => "01-Introduction to Chemistry", :content => "This would be valid content.")
-chem.futures.create(:title => "02-Matter and Change", :content => "This would be valid content.")
-chem.futures.create(:title => "03-Scientific Measurement", :content => "This would be valid content.")
+chem.futures.create(:title => "Introduction to Chemistry", :content => "This would be valid content.")
+chem.futures.create(:title => "Matter and Change", :content => "This would be valid content.")
+chem.futures.create(:title => "Scientific Measurement", :content => "This would be valid content.")
 
 
 Report.create(:name => "Jimmy Jones", :comment => "Some personal Comments", :gender => "male", :classwork => "35", :assessment => "36", :participate => "37", :subject_id => 1, :unit_id => 1, :intro_id => 1)
