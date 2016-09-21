@@ -18,7 +18,7 @@ RSpec.feature "Users  can edit existing intros" do
 
     within("#intro h2") do
       expect(page).to have_content "Concluding"
-      expect(page).not_to have_content unit.title
+      expect(page).not_to have_content intro.title
     end
   end
 

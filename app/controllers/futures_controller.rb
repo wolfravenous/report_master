@@ -10,25 +10,39 @@ class FuturesController < ApplicationController
     # handled by before action call to set future
   end
 
-
-def create
-  @future = @subject.futures.build(future_params)
-
-  if @future.save
-    flash[:notice] = "Future has been created."
-    redirect_to [@subject, @future]
-  else
-    flash.now[:alert] = "Future has not been created."
-    render "new"
+  def edit
+    # handled by before action call to set future
   end
-end
 
-def destroy
-  @future.destroy
-  flash[:notice] = "Future has been deleted."
 
-  redirect_to @subject
-end
+  def create
+    @future = @subject.futures.build(future_params)
+
+    if @future.save
+      flash[:notice] = "Future has been created."
+      redirect_to [@subject, @future]
+    else
+      flash.now[:alert] = "Future has not been created."
+      render "new"
+    end
+  end
+
+  def update
+    if @future.update(future_params)
+      flash[:notice] = "Future has been updated."
+      redirect_to [@subject, @future]
+    else
+      flash.now[:alert] = "Future has not been updated."
+      render "edit"
+    end
+  end
+
+  def destroy
+    @future.destroy
+    flash[:notice] = "Future has been deleted."
+
+    redirect_to @subject
+  end
 
 private
 
