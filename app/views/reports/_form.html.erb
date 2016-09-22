@@ -11,6 +11,10 @@
 
     <%= f.input :unit_id, collection: Subject.all, as: :grouped_select, group_method: :units %>
 
+    <%= f.input :initial_id, collection: Subject.all, as: :grouped_select, group_method: :units %>
+
+    <!-- ending unit will go here eventually -->
+
     <%= f.input :future_id, collection: Subject.all, as: :grouped_select, group_method: :futures %>
 
   <%= f.input :classwork %>

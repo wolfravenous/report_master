@@ -6,6 +6,7 @@ RSpec.feature "Users can delete reports" do
     FactoryGirl.create(:unit, title: "Unit1", content: "This is the content for unit 1", subject_id: 1)
     FactoryGirl.create(:intro, title: "Regular", content: "This is the content for a regular intro", subject_id: 1)
     FactoryGirl.create(:future, title: "Unit9", content: "This is the content for a future unit", subject_id: 1)
+
     FactoryGirl.create(:report, name: "Jimmy Jones", comment: "Some personal Comments", gender: "female", classwork: "88", assessment: "92", participate: "90", subject_id: 1, intro_id: 1, unit_id: 1, future_id: 1)
 
     visit "/"

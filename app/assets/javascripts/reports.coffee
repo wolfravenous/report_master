@@ -16,17 +16,6 @@
 
 
 jQuery ->
-  units = $('#report_unit_id').html()
-  $('#report_subject_id').change ->
-    subject = $('#report_subject_id :selected').text()
-    escaped_subject = subject.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
-    options = $(units).filter("optgroup[label='#{escaped_subject}']").html()
-    if options
-      $('#report_unit_id').html(options)
-    else
-      $('#report_unit_id').empty()
-
-
   intros = $('#report_intro_id').html()
   $('#report_subject_id').change ->
     subject = $('#report_subject_id :selected').text()
@@ -37,6 +26,25 @@ jQuery ->
     else
       $('#report_intro_id').empty()
 
+  units = $('#report_unit_id').html()
+  $('#report_subject_id').change ->
+    subject = $('#report_subject_id :selected').text()
+    escaped_subject = subject.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
+    options = $(units).filter("optgroup[label='#{escaped_subject}']").html()
+    if options
+      $('#report_unit_id').html(options)
+    else
+      $('#report_unit_id').empty()
+
+  initials = $('#report_initial_id').html()
+  $('#report_subject_id').change ->
+    subject = $('#report_subject_id :selected').text()
+    escaped_subject = subject.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
+    options = $(units).filter("optgroup[label='#{escaped_subject}']").html()
+    if options
+      $('#report_initial_id').html(options)
+    else
+      $('#report_initial_id').empty()
 
   futures = $('#report_future_id').html()
   $('#report_subject_id').change ->

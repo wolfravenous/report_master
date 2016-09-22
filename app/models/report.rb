@@ -6,6 +6,8 @@ class Report < ActiveRecord::Base
   belongs_to :intro
   belongs_to :future
 
+  belongs_to :initial, class_name: "Unit"
+
   # Validations
   validates :name, presence: true
   validates :comment, presence: true
@@ -13,6 +15,7 @@ class Report < ActiveRecord::Base
   validates :subject_id, presence: true
   validates :intro_id, presence: true
   validates :unit_id, presence: true
+  validates :initial_id, presence: true
   validates :future_id, presence: true
   validates :classwork, presence: true
   validates :assessment, presence: true
