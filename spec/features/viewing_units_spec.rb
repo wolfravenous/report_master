@@ -37,7 +37,7 @@ RSpec.feature "Users can view units" do
     expect(page).to have_content "The content of first unit."
 
     click_link "Biology"
-    expect(page).to have_content "#1"
-    
+    expect(page).to have_content "Unit-01"
+
   end
 end

@@ -37,7 +37,7 @@ RSpec.feature "Users can view futures" do
     expect(page).to have_content "This is the content for what student will complete in Unit 9."
 
     click_link "Animal Science"
-    expect(page).to have_content "#2"
+    expect(page).to have_content "Unit9"
 
   end
 end

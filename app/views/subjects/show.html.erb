@@ -24,7 +24,6 @@
 <ul id="intros">
   <% @subject.intros.each do |intro| %>
     <li>
-      #<%= intro.id %> -
       <%= link_to intro.title, [@subject, intro] %>
     </li>
   <% end %>
@@ -41,7 +40,6 @@
 <ul id="units">
   <% @subject.units.each do |unit| %>
     <li>
-      #<%= unit.id %> -
       <%= link_to unit.title, [@subject, unit] %>
     </li>
   <% end %>
@@ -61,7 +59,6 @@
 <ul id="futures">
   <% @subject.futures.each do |future| %>
     <li>
-      #<%= future.id %> -
       <%= link_to future.title, [@subject, future] %>
     </li>
   <% end %>

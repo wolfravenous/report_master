@@ -37,7 +37,7 @@ RSpec.feature "Users can view intros" do
     expect(page).to have_content "The content of regular intro for the class."
 
     click_link "Biology"
-    expect(page).to have_content "#1"
+    expect(page).to have_content "Regular"
 
   end
 end
