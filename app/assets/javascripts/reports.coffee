@@ -46,6 +46,16 @@ jQuery ->
     else
       $('#report_initial_id').empty()
 
+  endings = $('#report_ending_id').html()
+  $('#report_subject_id').change ->
+    subject = $('#report_subject_id :selected').text()
+    escaped_subject = subject.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
+    options = $(units).filter("optgroup[label='#{escaped_subject}']").html()
+    if options
+      $('#report_ending_id').html(options)
+    else
+      $('#report_ending_id').empty()
+
   futures = $('#report_future_id').html()
   $('#report_subject_id').change ->
     subject = $('#report_subject_id :selected').text()

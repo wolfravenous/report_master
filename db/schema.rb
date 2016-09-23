@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160922144944) do
+ActiveRecord::Schema.define(version: 20160923003357) do
 
   create_table "futures", force: :cascade do |t|
     t.string   "title"
@@ -47,8 +47,10 @@ ActiveRecord::Schema.define(version: 20160922144944) do
     t.integer  "intro_id"
     t.integer  "future_id"
     t.integer  "initial_id"
+    t.integer  "ending_id"
   end
 
+  add_index "reports", ["ending_id"], name: "index_reports_on_ending_id"
   add_index "reports", ["future_id"], name: "index_reports_on_future_id"
   add_index "reports", ["initial_id"], name: "index_reports_on_initial_id"
   add_index "reports", ["intro_id"], name: "index_reports_on_intro_id"
