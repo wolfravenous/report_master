@@ -23,3 +23,22 @@
 <p><b><%= :participate.capitalize %>:</b>   <%= @report.participate %></p>
 <p><b><%= :average.capitalize %>:</b>   <%= @report.average %></p>
 <p><b><%= :comment.capitalize %>:</b>   <%= @report.comment %></p>
+<br>
+<p><b><%= @report.name %> - <%= @report.subject.name %></b></p>
+<p><%= @report.intro.content %></p>
+<p><%= @report.initial.content %></p>
+<p><%= @report.ending.content %></p>
+<p><%= @report.future.content %></p>
+<p>
+Classwork = 50% of overall grade<br>
+Assessment = 30% of overall grade<br>
+Participation = 20% of overall grade<br>
+------------------------------------<br>
+<%= :classwork.capitalize %>:  <%= @report.classwork %><br>
+<%= :assessment.capitalize %>:  <%= @report.assessment %><br>
+<%= :participate.capitalize %>:  <%= @report.participate %><br>
+<%= :average.capitalize %>:  <%= @report.average %></p>
+<p><%= @report.comment %></p>
+<br>
+<br>
+<br>
