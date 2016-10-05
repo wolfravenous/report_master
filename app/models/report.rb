@@ -34,6 +34,17 @@ class Report < ActiveRecord::Base
     favg.to_i
   end
 
+  def unit_array
+    x = self.initial_id
+    y = self.ending_id
+    array = Unit.where(id: x..y).pluck(:content).join("\n\n")
+  end
+
+  def genderized_unit_array
+    unit_array.gsub(/HESHE/, heshe_pronoun.capitalize).gsub(/heshe/, heshe_pronoun).gsub(/HIMHER/, himher_pronoun.capitalize).gsub(/himher/, himher_pronoun).gsub(/HISHER/, hisher_pronoun.capitalize).gsub(/hisher/, hisher_pronoun).gsub(/HSHS/, hshs_pronoun.capitalize).gsub(/hshs/, hshs_pronoun).gsub(/NAME/, self.name)
+  end
+
+
   def heshe_pronoun
     gender == 'female' ? 'she' : 'he'
   end
