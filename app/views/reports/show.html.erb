@@ -12,6 +12,8 @@
   </ul>
 </header>
 
+
+
 <p><b><%= :gender.capitalize %>:</b>  <%= @report.gender %></p>
 <p><b><%= :subject.capitalize %>:</b>   <%= @report.subject.name %></p>
 <p><b><%= :intro.capitalize %>:</b>   <%= @report.intro.title%></p>
@@ -25,10 +27,15 @@
 <p><b><%= :comment.capitalize %>:</b>   <%= @report.comment %></p>
 <br>
 <p><b><%= @report.name %> - <%= @report.subject.name %></b></p>
-<p><%= @report.intro.content %></p>
-<p><%= @report.initial.content %></p>
+
+<p>  <%= @report.genderized_intro %></p>
+
+<p> <%= @report.initial.content %> </p>
+
 <p><%= @report.ending.content %></p>
-<p><%= @report.future.content %></p>
+
+<p><%= @report.genderized_future %></p>
+
 <p>
 Classwork = 50% of overall grade<br>
 Assessment = 30% of overall grade<br>
@@ -38,7 +45,8 @@ Participation = 20% of overall grade<br>
 <%= :assessment.capitalize %>:  <%= @report.assessment %><br>
 <%= :participate.capitalize %>:  <%= @report.participate %><br>
 <%= :average.capitalize %>:  <%= @report.average %></p>
-<p><%= @report.comment %></p>
+
+<p><%= @report.genderized_comment %></p>
 <br>
 <br>
 <br>
