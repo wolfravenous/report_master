@@ -15,6 +15,8 @@
 
     <%= f.input :ending_id, collection: Subject.all, as: :grouped_select, group_method: :units %>
 
+    <%= f.input :honor, label: "Honors?" %>
+
     <%= f.input :future_id, collection: Subject.all, as: :grouped_select, group_method: :futures %>
 
   <%= f.input :classwork %>

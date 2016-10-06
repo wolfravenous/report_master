@@ -13,7 +13,7 @@
 </header>
 
 
-
+<!--
 <p><b><%= :gender.capitalize %>:</b>  <%= @report.gender %></p>
 <p><b><%= :subject.capitalize %>:</b>   <%= @report.subject.name %></p>
 <p><b><%= :intro.capitalize %>:</b>   <%= @report.intro.title%></p>
@@ -25,12 +25,16 @@
 <p><b><%= :participate.capitalize %>:</b>   <%= @report.participate %></p>
 <p><b><%= :average.capitalize %>:</b>   <%= @report.average %></p>
 <p><b><%= :comment.capitalize %>:</b>   <%= @report.comment %></p>
+ -->
+
 <br>
 <p><b><%= @report.name %> - <%= @report.subject.name %></b></p>
 
 <p>  <%= simple_format(@report.genderized_intro) %> </p>
 
 <p><%= simple_format(@report.genderized_unit_array) %></p>
+
+<%= simple_format(@report.genderized_honor_comment) %>
 
 <p><%= simple_format(@report.genderized_future) %></p>
 

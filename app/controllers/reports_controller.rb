@@ -53,7 +53,7 @@ class ReportsController < ApplicationController
   private
 
   def report_params
-    params.require(:report).permit(:name, :comment, :gender, :subject_id, :intro_id, :unit_id, :initial_id, :ending_id, :future_id, :classwork, :assessment, :participate, :average)
+    params.require(:report).permit(:name, :comment, :gender, :subject_id, :intro_id, :unit_id, :initial_id, :ending_id, :future_id, :classwork, :assessment, :participate, :average, :honor)
   end
 
   def set_report

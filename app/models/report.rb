@@ -40,9 +40,12 @@ class Report < ActiveRecord::Base
     array = Unit.where(id: x..y).pluck(:content).join("\n\n")
   end
 
+
+
   def genderized_unit_array
     unit_array.gsub(/HESHE/, heshe_pronoun.capitalize).gsub(/heshe/, heshe_pronoun).gsub(/HIMHER/, himher_pronoun.capitalize).gsub(/himher/, himher_pronoun).gsub(/HISHER/, hisher_pronoun.capitalize).gsub(/hisher/, hisher_pronoun).gsub(/HSHS/, hshs_pronoun.capitalize).gsub(/hshs/, hshs_pronoun).gsub(/NAME/, self.name)
   end
+
 
 
   def heshe_pronoun
@@ -71,6 +74,13 @@ class Report < ActiveRecord::Base
   end
 
 
+  def honor_comment
+    honor == true ? "Some NAME Comment here about hisher work at the honors level. \n" : ""
+  end
+
+  def genderized_honor_comment
+    honor_comment.gsub(/HESHE/, heshe_pronoun.capitalize).gsub(/heshe/, heshe_pronoun).gsub(/HIMHER/, himher_pronoun.capitalize).gsub(/himher/, himher_pronoun).gsub(/HISHER/, hisher_pronoun.capitalize).gsub(/hisher/, hisher_pronoun).gsub(/HSHS/, hshs_pronoun.capitalize).gsub(/hshs/, hshs_pronoun).gsub(/NAME/, self.name)
+  end
 
 
 
