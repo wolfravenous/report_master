@@ -32,7 +32,7 @@ RSpec.feature "Users can create new reports" do
     select "Unit9", :from => "Future"
     fill_in "Classwork", with: "88"
     fill_in "Assessment", with: "92"
-    fill_in "Participate", with: "90"
+    fill_in "Participation", with: "90"
     fill_in "Comment", with: "Some personal comments about STUDENTNAME"
 
 

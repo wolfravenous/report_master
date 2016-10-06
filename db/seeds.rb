@@ -35,10 +35,10 @@ chem.futures.create(:title => "02-Matter and Change", :content => "This would be
 chem.futures.create(:title => "03-Scientific Measurement", :content => "This would be valid content.")
 
 
-Report.create(:name => "Jimmy Jones", :comment => "Some personal Comments", :gender => "male", :classwork => "35", :assessment => "36", :participate => "37", :subject_id => 1, :initial_id => 1, :ending_id => 3, :intro_id => 1, :future_id => 3)
+Report.create(:name => "Jimmy Jones", :comment => "Some personal Comments", :gender => "male", :classwork => "35", :assessment => "36", :participate => "37", :subject_id => 1, :initial_id => 1, :ending_id => 3, :intro_id => 1, :future_id => 3, :honor => true, :accel => true, :maxonline => true)
 
 
-Report.create(:name => "Susie Stone", :comment => "Some personal Comments", :gender => "female", :classwork => "53", :assessment => "54", :participate => "55", :subject_id => 2, :initial_id => 4, :ending_id => 6, :intro_id => 4, :future_id => 6)
+Report.create(:name => "Susie Stone", :comment => "Some personal Comments", :gender => "female", :classwork => "53", :assessment => "54", :participate => "55", :subject_id => 2, :initial_id => 4, :ending_id => 6, :intro_id => 4, :future_id => 6, :honor => false, :accel => false, :maxonline => false)
 #
 # Subject.create(name: "Biology")
 # Subject.create(name: "Chemistry")
