@@ -34,19 +34,23 @@
 
 <p><%= simple_format(@report.genderized_unit_array) %></p>
 
-<%= simple_format(@report.genderized_honor_comment) %>
+<%= (@report.genderized_honor_comment) %>
+<%= (@report.genderized_accel_comment) %>
+<%= (@report.genderized_maxonline_comment) %>
 
 <p><%= simple_format(@report.genderized_future) %></p>
+
+<p><%= simple_format(@report.grade_descrip) %></p>
 
 <p>
 Classwork = 50% of overall grade<br>
 Assessment = 30% of overall grade<br>
 Participation = 20% of overall grade<br>
 ------------------------------------<br>
-<%= :classwork.capitalize %>:  <%= @report.classwork %><br>
-<%= :assessment.capitalize %>:  <%= @report.assessment %><br>
-<%= :participate.capitalize %>:  <%= @report.participate %><br>
-<%= :average.capitalize %>:  <%= @report.average %></p>
+<%= :classwork.capitalize %>:  <%= @report.classwork_rev %><br>
+<%= :assessment.capitalize %>:  <%= @report.assessment_rev %><br>
+<%= :participation.capitalize %>:  <%= @report.participate_rev %><br>
+<%= :average.capitalize %>:  <%= @report.average_rev%></p>
 
 <p><%= simple_format(@report.genderized_comment) %></p>
 <br>

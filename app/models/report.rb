@@ -75,11 +75,47 @@ class Report < ActiveRecord::Base
 
 
   def honor_comment
-    honor == true ? "Some NAME Comment here about hisher work at the honors level. \n" : ""
+    honor == true ? "Some NAME Comment here about hisher work at the honors level." : ""
   end
 
   def genderized_honor_comment
     honor_comment.gsub(/HESHE/, heshe_pronoun.capitalize).gsub(/heshe/, heshe_pronoun).gsub(/HIMHER/, himher_pronoun.capitalize).gsub(/himher/, himher_pronoun).gsub(/HISHER/, hisher_pronoun.capitalize).gsub(/hisher/, hisher_pronoun).gsub(/HSHS/, hshs_pronoun.capitalize).gsub(/hshs/, hshs_pronoun).gsub(/NAME/, self.name)
+  end
+
+  def accel_comment
+    accel == true ? "Some NAME Comment here about himher accelerating hisher work." : ""
+  end
+
+  def genderized_accel_comment
+    accel_comment.gsub(/HESHE/, heshe_pronoun.capitalize).gsub(/heshe/, heshe_pronoun).gsub(/HIMHER/, himher_pronoun.capitalize).gsub(/himher/, himher_pronoun).gsub(/HISHER/, hisher_pronoun.capitalize).gsub(/hisher/, hisher_pronoun).gsub(/HSHS/, hshs_pronoun.capitalize).gsub(/hshs/, hshs_pronoun).gsub(/NAME/, self.name)
+  end
+
+  def maxonline_comment
+    maxonline == true ? "A comment here about NAME maximimzing hisher scores for online work." : ""
+  end
+
+  def genderized_maxonline_comment
+    maxonline_comment.gsub(/HESHE/, heshe_pronoun.capitalize).gsub(/heshe/, heshe_pronoun).gsub(/HIMHER/, himher_pronoun.capitalize).gsub(/himher/, himher_pronoun).gsub(/HISHER/, hisher_pronoun.capitalize).gsub(/hisher/, hisher_pronoun).gsub(/HSHS/, hshs_pronoun.capitalize).gsub(/hshs/, hshs_pronoun).gsub(/NAME/, self.name)
+  end
+
+  def grade_descrip
+    average = true ? "Students are evaluated for a grade based on three weighted areas.  The first is classwork/homework.  This category is composed of both written and online work completed in the classroom and outside of class.  This work is weighted as fifty percent of the overall grade. The second area of evaluation is assessments.  This category is representative of interactive online and written assessments that the students complete following class work on a topic.  The assessment category is weighted as thirty percent of the overall grade.  The final category of evaluation is participation and discussion in class labs and demonstrations.  This is weighted as the remaining twenty percent of the overall grade. These percentage breakdowns are included so that students can see what areas they are doing well in and focus to strengthen those areas in which their scores may be weaker." : ""
+  end
+
+  def average_rev
+    average > 0 ? (average > 1 ? average : "NA") : "NC"
+  end
+
+  def classwork_rev
+    self.classwork > 0 ? (self.classwork > 1 ? self.classwork : "NA") : "NC"
+  end
+
+  def assessment_rev
+    self.assessment > 0 ? (self.assessment > 1 ? self.assessment : "NA") : "NC"
+  end
+
+  def participate_rev
+    self.participate > 0 ? (self.participate > 1 ? self.participate : "NA") : "NC"
   end
 
 
