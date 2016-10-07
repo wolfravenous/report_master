@@ -3,7 +3,7 @@ class ReportsController < ApplicationController
   before_action :set_report, only: [:show, :edit, :update, :destroy]
 
   def index
-    @reports = Report.all
+    @reports = Report.all.order(:subject_id, :name)
   end
 
   def show
