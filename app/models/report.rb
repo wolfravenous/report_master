@@ -16,10 +16,10 @@ class Report < ActiveRecord::Base
   validates :gender, presence: true
   validates :subject_id, presence: true
   validates :intro_id, presence: true
-  # validates :unit_id, presence: true
-  validates :initial_id, presence: true
-  validates :ending_id, presence: true
-  validates :future_id, presence: true
+  validates :unit_id, presence: true, :allow_nil => true
+  validates :initial_id, presence: true, :allow_nil => true
+  validates :ending_id, presence: true, :allow_nil => true
+  validates :future_id, presence: true, :allow_nil => true
   validates :classwork, presence: true
   validates :assessment, presence: true
   validates :participate, presence: true
@@ -71,6 +71,7 @@ class Report < ActiveRecord::Base
 
   def genderized_future
     future.content.gsub(/HESHE/, heshe_pronoun.capitalize).gsub(/heshe/, heshe_pronoun).gsub(/HIMHER/, himher_pronoun.capitalize).gsub(/himher/, himher_pronoun).gsub(/HISHER/, hisher_pronoun.capitalize).gsub(/hisher/, hisher_pronoun).gsub(/HSHS/, hshs_pronoun.capitalize).gsub(/hshs/, hshs_pronoun).gsub(/NAME/, self.name)
+
   end
 
 

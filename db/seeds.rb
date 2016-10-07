@@ -19,39 +19,39 @@ pymath = Subject.create(:name => "Programming for Mathematics")
 
 # INTROS
 # ANIMAL SCIENCE INTRO
-animsci.intros.create(:title => "AnimSci-Welcome", :content => "This would be content for a welcome introduction.")
 animsci.intros.create(:title => "AnimSci-Regular", :content => "This would be content for a regular introduction.")
 animsci.intros.create(:title => "AnimSci-Final", :content => "This would be content for a final introduction.")
+animsci.intros.create(:title => "AnimSci-Welcome", :content => "This would be content for a welcome introduction.")
 
 # ASTRONOMY INTRO
-astro.intros.create(:title => "Astro-Welcome", :content => "This would be content for a welcome introduction.")
 astro.intros.create(:title => "Astro-Regular", :content => "This would be content for a regular introduction.")
 astro.intros.create(:title => "Astro-Final", :content => "This would be content for a final introduction.")
+astro.intros.create(:title => "Astro-Welcome", :content => "This would be content for a welcome introduction.")
 
 # BIOLOGY INTRO
-bio.intros.create(:title => "Bio-Welcome", :content => "This would be content for a welcome introduction.")
 bio.intros.create(:title => "Bio-Regular", :content => "This would be content for a regular introduction.")
 bio.intros.create(:title => "Bio-Final", :content => "This would be content for a final introduction.")
+bio.intros.create(:title => "Bio-Welcome", :content => "This would be content for a welcome introduction.")
 
 # CHEMISTRY INTRO
-chem.intros.create(:title => "Chm-Welcome", :content => "This would be content for a welcome introduction.")
 chem.intros.create(:title => "Chm-Regular", :content => "This would be content for a regular introduction.")
 chem.intros.create(:title => "Chm-Final", :content => "This would be content for a concluding introduction.")
+chem.intros.create(:title => "Chm-Welcome", :content => "This would be content for a welcome introduction.")
 
 # ENVIRONMENTAL SCIENCE INTRO
-envsci.intros.create(:title => "EnvSci-Welcome", :content => "This would be content for a welcome introduction.")
 envsci.intros.create(:title => "EnvSci-Regular", :content => "This would be content for a regular introduction.")
 envsci.intros.create(:title => "EnvSci-Final", :content => "This would be content for a concluding introduction.")
+envsci.intros.create(:title => "EnvSci-Welcome", :content => "This would be content for a welcome introduction.")
 
 # PHYSICS INTRO
-phys.intros.create(:title => "Phys-Welcome", :content => "This would be content for a welcome introduction.")
 phys.intros.create(:title => "Phys-Regular", :content => "This would be content for a regular introduction.")
 phys.intros.create(:title => "Phys-Final", :content => "This would be content for a concluding introduction.")
+phys.intros.create(:title => "Phys-Welcome", :content => "This would be content for a welcome introduction.")
 
 # PYMATH INTRO
-pymath.intros.create(:title => "PyMath-Welcome", :content => "This would be content for a welcome introduction.")
 pymath.intros.create(:title => "PyMath-Regular", :content => "This would be content for a regular introduction.")
 pymath.intros.create(:title => "PyMath-Final", :content => "This would be content for a concluding introduction.")
+pymath.intros.create(:title => "PyMath-Welcome", :content => "This would be content for a welcome introduction.")
 
 # UNITS
 # ANIMAL SCIENCE UNITS

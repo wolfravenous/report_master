@@ -9,17 +9,17 @@
 
     <%= f.input :intro_id, collection: Subject.all, as: :grouped_select, group_method: :intros %>
 
-    <%= f.input :unit_id, collection: Subject.all, as: :grouped_select, group_method: :units %>
+    <%= f.input :unit_id, collection: Subject.all, as: :grouped_select, group_method: :units, :include_blank => "(select if none)" %>
 
-    <%= f.input :initial_id, collection: Subject.all, as: :grouped_select, group_method: :units %>
+    <%= f.input :initial_id, collection: Subject.all, as: :grouped_select, group_method: :units, :include_blank => "(select if none)" %>
 
-    <%= f.input :ending_id, collection: Subject.all, as: :grouped_select, group_method: :units %>
+    <%= f.input :ending_id, collection: Subject.all, as: :grouped_select, group_method: :units, :include_blank => "(select if none)" %>
 
     <%= f.input :honor, label: "Honors?" %>
     <%= f.input :accel, label: "Accellerating?" %>
     <%= f.input :maxonline, label: "Maximize Scores for Online Assignments?" %>
 
-    <%= f.input :future_id, collection: Subject.all, as: :grouped_select, group_method: :futures %>
+    <%= f.input :future_id, collection: Subject.all, as: :grouped_select, group_method: :futures, :include_blank => "(select if none)" %>
 
   <%= f.input :classwork, label: "Classwork, 0 => NC, 1 => NA" %>
   <%= f.input :assessment, label: "Assessment, 0 => NC, 1 => NA"  %>
