@@ -15,7 +15,7 @@ RSpec.feature "Users can view reports" do
     expect(page.current_url).to eq report_url(report)
     expect(page).to have_content "Jill"
     # expect(page).to have_content "female"
-    expect(page).to have_content "Astronomy"
+    # expect(page).to have_content "Astronomy"
     # expect(page).to have_content "Regular"
     # expect(page).to have_content "Unit1"
     # expect(page).to have_content "Unit9"
