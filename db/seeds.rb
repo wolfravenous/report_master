@@ -55,10 +55,48 @@ pymath.intros.create(:title => "PyMath-Final", :content => "This would be conten
 
 # UNITS
 # ANIMAL SCIENCE UNITS
-
+animsci.units.create(:title => "01-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "02-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "03-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "04-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "05-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "06-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "07-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "08-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "09-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "10-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "11-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "12-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "13-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "14-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "15-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "16-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "17-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "18-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "19-Topic Name", :content => "This would be valid content.")
+animsci.units.create(:title => "20-Topic Name", :content => "This would be valid content.")
 
 # ASTRONOMY UNITS
-
+astro.units.create(:title => "01-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "02-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "03-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "04-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "05-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "06-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "07-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "08-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "09-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "10-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "11-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "12-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "13-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "14-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "15-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "16-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "17-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "18-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "19-Topic Name", :content => "This would be valid content.")
+astro.units.create(:title => "20-Topic Name", :content => "This would be valid content.")
 
 # BIOLOGY UNITS
 bio.units.create(:title => "01-The Science of Biology", :content => "This would be valid content.")
@@ -195,15 +233,72 @@ phys.units.create(:title => "39-The Atomic Nucleus and Radioactivity", :content 
 phys.units.create(:title => "40-Nuclear Fission and Fusion", :content => "This would be valid content.")
 
 # PYMATH UNITS
-
+pymath.units.create(:title => "01-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "02-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "03-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "04-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "05-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "06-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "07-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "08-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "09-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "10-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "11-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "12-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "13-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "14-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "15-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "16-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "17-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "18-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "19-Topic Name", :content => "This would be valid content.")
+pymath.units.create(:title => "20-Topic Name", :content => "This would be valid content.")
 
 
 # FUTURES
 # ANIMAL SCIENCE FUTURES
-
+animsci.futures.create(:title => "01-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "02-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "03-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "04-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "05-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "06-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "07-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "08-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "09-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "10-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "11-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "12-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "13-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "14-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "15-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "16-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "17-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "18-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "19-Topic Name", :content => "This would be valid content for what student will do.")
+animsci.futures.create(:title => "20-Topic Name", :content => "This would be valid content for what student will do.")
 
 # ASTRONOMY FUTURES
-
+astro.futures.create(:title => "01-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "02-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "03-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "04-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "05-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "06-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "07-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "08-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "09-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "10-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "11-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "12-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "13-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "14-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "15-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "16-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "17-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "18-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "19-Topic Name", :content => "This would be valid content for what student will do.")
+astro.futures.create(:title => "20-Topic Name", :content => "This would be valid content for what student will do.")
 
 # BIOLOGY FUTURES
 bio.futures.create(:title => "01-The Science of Biology", :content => "This would be valid content for what student will do.")
@@ -274,7 +369,6 @@ chem.futures.create(:title => "23-Functional Groups", :content => "This would be
 chem.futures.create(:title => "24-The Chemistry of Life", :content => "This would be valid content.")
 chem.futures.create(:title => "25-Nuclear Chemistry", :content => "This would be valid content.")
 
-
 # ENVIRONMENTAL SCIENCE FUTURES
 envsci.futures.create(:title => "01-Science and the Environment", :content => "This would be valid content.")
 envsci.futures.create(:title => "02-Tools of Environmental Science", :content => "This would be valid content.")
@@ -339,8 +433,28 @@ phys.futures.create(:title => "37-Electromagnetic Induction", :content => "This 
 phys.futures.create(:title => "38-The Atom and The Quantum", :content => "This would be valid content.")
 phys.futures.create(:title => "39-The Atomic Nucleus and Radioactivity", :content => "This would be valid content.")
 phys.futures.create(:title => "40-Nuclear Fission and Fusion", :content => "This would be valid content.")
-# PYMATH FUTURES
 
+# PYMATH FUTURES
+pymath.futures.create(:title => "01-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "02-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "03-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "04-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "05-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "06-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "07-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "08-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "09-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "10-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "11-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "12-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "13-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "14-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "15-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "16-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "17-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "18-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "19-Topic Name", :content => "This would be valid content for what student will do.")
+pymath.futures.create(:title => "20-Topic Name", :content => "This would be valid content for what student will do.")
 
 
 # REPORTS
