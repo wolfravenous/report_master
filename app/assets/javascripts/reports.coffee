@@ -26,13 +26,19 @@ jQuery ->
     else
       $('#report_intro_id').empty()
 
+
   units = $('#report_unit_id').html()
   $('#report_subject_id').change ->
     subject = $('#report_subject_id :selected').text()
     escaped_subject = subject.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
     options = $(units).filter("optgroup[label='#{escaped_subject}']").html()
+    # if options
+    #   $('#report_unit_id').html(options)
+    # else
+    #   $('#report_unit_id').empty()
     if options
-      $('#report_unit_id').html(options)
+      $('#report_unit_id').children().not(':first').detach()
+      $('#report_unit_id').append(options)
     else
       $('#report_unit_id').empty()
 
@@ -41,8 +47,13 @@ jQuery ->
     subject = $('#report_subject_id :selected').text()
     escaped_subject = subject.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
     options = $(units).filter("optgroup[label='#{escaped_subject}']").html()
+    # if options
+    #   $('#report_initial_id').html(options)
+    # else
+    #   $('#report_initial_id').empty()
     if options
-      $('#report_initial_id').html(options)
+      $('#report_initial_id').children().not(':first').detach()
+      $('#report_initial_id').append(options)
     else
       $('#report_initial_id').empty()
 
@@ -51,8 +62,13 @@ jQuery ->
     subject = $('#report_subject_id :selected').text()
     escaped_subject = subject.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
     options = $(units).filter("optgroup[label='#{escaped_subject}']").html()
+    # if options
+    #   $('#report_ending_id').html(options)
+    # else
+    #   $('#report_ending_id').empty()
     if options
-      $('#report_ending_id').html(options)
+      $('#report_ending_id').children().not(':first').detach()
+      $('#report_ending_id').append(options)
     else
       $('#report_ending_id').empty()
 
@@ -61,7 +77,12 @@ jQuery ->
     subject = $('#report_subject_id :selected').text()
     escaped_subject = subject.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1')
     options = $(futures).filter("optgroup[label='#{escaped_subject}']").html()
+    # if options
+    #   $('#report_future_id').html(options)
+    # else
+    #   $('#report_future_id').empty()
     if options
-      $('#report_future_id').html(options)
+      $('#report_future_id').children().not(':first').detach()
+      $('#report_future_id').append(options)
     else
       $('#report_future_id').empty()
