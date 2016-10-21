@@ -31,9 +31,10 @@
 <br>
 <p><b>| <%= @report.intro.title%></b></p>
 
-<p>  <%= simple_format(@report.genderized_intro) %> </p>
-
-<p><%= simple_format(@report.genderized_unit_array) %></p>
+<p>
+  <%= simple_format(@report.genderized_intro) %>
+  <%= simple_format(@report.genderized_unit_array) %>
+</p>
 
 <%= (@report.genderized_honor_comment) %>
 <%= (@report.genderized_accel_comment) %>

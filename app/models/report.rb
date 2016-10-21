@@ -76,7 +76,7 @@ class Report < ActiveRecord::Base
 
 
   def honor_comment
-    honor == true ? "Some NAME Comment here about hisher work at the honors level." : ""
+    honor == true ? "To provide Honors supplement to NAME, heshe was challenged to work to develop a deeper understanding of the course material.  NAME also served as a peer tutor and assisted other students to achieve success in class." : ""
   end
 
   def genderized_honor_comment
@@ -84,7 +84,7 @@ class Report < ActiveRecord::Base
   end
 
   def accel_comment
-    accel == true ? "Some NAME Comment here about himher accelerating hisher work." : ""
+    accel == true ? "In order to allow NAME to move through the course in an accelerated manner heshe received a heavier and concentrated work load to complete the course material in an abbreviated time." : ""
   end
 
   def genderized_accel_comment
@@ -92,7 +92,7 @@ class Report < ActiveRecord::Base
   end
 
   def maxonline_comment
-    maxonline == true ? "A comment here about NAME maximimzing hisher scores for online work." : ""
+    maxonline == true ? "NAME is encouraged to maximize hisher scores on online assignments when heshe is given the opportunity for multiple attempts." : ""
   end
 
   def genderized_maxonline_comment
@@ -108,17 +108,16 @@ class Report < ActiveRecord::Base
   end
 
   def classwork_rev
-    self.classwork > 0 ? (self.classwork > 1 ? self.classwork : "NA") : "NC"
+    self.classwork > 0 ? (self.classwork > 1 ? self.classwork.to_i : "NA") : "NC"
   end
 
   def assessment_rev
-    self.assessment > 0 ? (self.assessment > 1 ? self.assessment : "NA") : "NC"
+    self.assessment > 0 ? (self.assessment > 1 ? self.assessment.to_i : "NA") : "NC"
   end
 
   def participate_rev
-    self.participate > 0 ? (self.participate > 1 ? self.participate : "NA") : "NC"
+    self.participate > 0 ? (self.participate > 1 ? self.participate.to_i : "NA") : "NC"
   end
-
 
 
 end

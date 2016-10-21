@@ -8,7 +8,7 @@
 
 <div id="reports">
   <% @reports.each do |report| %>
-  <h2><%= link_to report.name, report %></h2>
+  <h2><%= link_to report.name, report %> - <%= report.subject.name %></h2>
   <!-- <p><%= report.comment %></p> -->
   <% end %>
 </div>
