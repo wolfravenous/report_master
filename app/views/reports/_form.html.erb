@@ -22,10 +22,10 @@
 
     <%= f.input :future_id, collection: Subject.all, as: :grouped_select, group_method: :futures, :include_blank => "(select if none)" %>
 
-  <%= f.input :classwork, label: "Classwork, 0 => NC, 1 => NA" %>
-  <%= f.input :assessment, label: "Assessment, 0 => NC, 1 => NA"  %>
-  <%= f.input :participate, label: "Participation, 0 => NC, 1 => NA"  %>
-  <%= f.input :comment, label: 'Personal Comments' %>
+  <%= f.input :classwork, label: "Classwork, 0 => NA, 1 => NC" %>
+  <%= f.input :assessment, label: "Assessment, 0 => NA, 1 => NC"  %>
+  <%= f.input :participate, label: "Participation, 0 => NA, 1 => NC"  %>
+  <%= f.input :comment, as: :text, label: 'Personal Comments' %>
 
   <%= f.button :submit, class: "btn-primary" %>
 <% end %>

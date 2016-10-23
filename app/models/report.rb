@@ -34,6 +34,8 @@ class Report < ActiveRecord::Base
     favg.to_i
   end
 
+
+
   def unit_array
     x = self.initial_id
     y = self.ending_id
@@ -104,19 +106,23 @@ class Report < ActiveRecord::Base
   end
 
   def average_rev
-    average > 0 ? (average > 1 ? average : "NA") : "NC"
+    average > 0 ? (average > 1 ? average : "NC") : "NA"
   end
 
   def classwork_rev
-    self.classwork > 0 ? (self.classwork > 1 ? self.classwork.to_i : "NA") : "NC"
+    self.classwork > 0 ? (self.classwork > 1 ? self.classwork.to_i : "NC") : "NA"
   end
 
   def assessment_rev
-    self.assessment > 0 ? (self.assessment > 1 ? self.assessment.to_i : "NA") : "NC"
+    self.assessment > 0 ? (self.assessment > 1 ? self.assessment.to_i : "NC") : "NA"
   end
 
   def participate_rev
-    self.participate > 0 ? (self.participate > 1 ? self.participate.to_i : "NA") : "NC"
+    self.participate > 0 ? (self.participate > 1 ? self.participate.to_i : "NC") : "NA"
+  end
+
+  def letter_grade
+    average > 0 ? (average >= 70 ? (average >= 73 ? (average >= 77 ? (average >= 80 ? (average >= 83 ? (average >= 87 ? (average >= 90 ? (average >= 93 ? (average > 100 ? average : "A") : "A-") : "B+") : "B") : "B-") : "C+") : "C") : "C-") : "NC") : "NA"
   end
 
 
