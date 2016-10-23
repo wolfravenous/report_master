@@ -29,7 +29,7 @@
  -->
 
 <br>
-<p><b>| <%= @report.intro.title%> | <%= @report.letter_grade %></b></p>
+<p><b>| <%= @report.intro.title%><%= @report.accel_heading %><%= @report.honor_heading %> | <%= @report.letter_grade %></b></p>
 
 <p>
   <%= simple_format(@report.genderized_intro) %>

@@ -125,5 +125,12 @@ class Report < ActiveRecord::Base
     average > 0 ? (average >= 70 ? (average >= 73 ? (average >= 77 ? (average >= 80 ? (average >= 83 ? (average >= 87 ? (average >= 90 ? (average >= 93 ? (average > 100 ? average : "A") : "A-") : "B+") : "B") : "B-") : "C+") : "C") : "C-") : "NC") : "NA"
   end
 
+  def honor_heading
+    honor == true ? " | HONORS" : ""
+  end
+
+  def accel_heading
+    accel == true ? " | ACCELERATING" : ""
+  end
 
 end
