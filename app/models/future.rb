@@ -6,6 +6,6 @@ class Future < ActiveRecord::Base
 
   # Validations
   validates :title, presence: true
-  validates :content, presence: true, length: { minimum: 10 }
+ #  validates :content, presence: true, length: { minimum: 10 }
 
 end
