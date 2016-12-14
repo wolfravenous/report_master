@@ -19,7 +19,7 @@ RSpec.feature "Users can view reports" do
     # expect(page).to have_content "Regular"
     # expect(page).to have_content "Unit1"
     # expect(page).to have_content "Unit9"
-    expect(page).to have_content "83.5"
+    expect(page).to have_content "83"
     expect(page).to have_content "84"
     expect(page).to have_content "Some Personal Comments"
 
